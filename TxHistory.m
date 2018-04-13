@@ -3,7 +3,7 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 7/24/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010. All rights reserved.
 //
 
 #import "TxHistory.h"
@@ -80,6 +80,5 @@
 - (NSInteger)numberOfWeeks {
     return [a count] == 0 ? 0 : [self lastWeek] - [self firstWeek] + 1;
 }
-
 
 @end
