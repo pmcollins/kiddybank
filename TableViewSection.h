@@ -11,9 +11,9 @@
 #import "TableViewRow.h"
 
 @interface TableViewSection : NSObject {
-	NSString *title, *footerTitle;
-	//NSMutableArray *handlers;
-	NSMutableArray *rows;
+    NSString *title, *footerTitle;
+    //NSMutableArray *handlers;
+    NSMutableArray *rows;
 }
 
 @property (nonatomic, strong) NSString *title, *footerTitle;

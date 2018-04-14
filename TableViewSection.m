@@ -13,10 +13,10 @@
 @synthesize title, footerTitle;
 
 - (id)initWithTitle:(NSString *)t {
-	self = [super init];
-	title = t;
+    self = [super init];
+    title = t;
     rows = [[NSMutableArray alloc] init];
-	return self;
+    return self;
 }
 
 - (void)addRow:(TableViewRow *)row
@@ -30,7 +30,7 @@
 }
 
 - (NSInteger)rowCount {
-	return [rows count];
+    return [rows count];
 }
 
 

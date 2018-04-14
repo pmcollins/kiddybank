@@ -11,7 +11,7 @@
 @class TableViewSection, TableViewRow;
 
 @interface TableViewData : NSObject {
-	NSMutableArray *sections;
+    NSMutableArray *sections;
 }
 
 - (void)addSection:(TableViewSection *)s;

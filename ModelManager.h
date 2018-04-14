@@ -12,7 +12,7 @@
 
 @interface ModelManager : NSObject {
     NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;	    
+    NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 }
 

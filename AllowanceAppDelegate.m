@@ -64,32 +64,32 @@ static NSNumberFormatter *currencyFormatter;
                     imagePressed:(UIImage *)imagePressed
                    darkTextColor:(BOOL)darkTextColor
 {
-	UIButton *button = [[UIButton alloc] initWithFrame:frame];
-	// or you can do this:
-	//		UIButton *button = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
-	
-	button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-	button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-	
-	[button setTitle:title forState:UIControlStateNormal];	
-	if (darkTextColor) {
-		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	} else {
-		[button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-	}
-	
-	UIImage *newImage = [image stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
-	[button setBackgroundImage:newImage forState:UIControlStateNormal];
-	
-	UIImage *newPressedImage = [imagePressed stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
-	[button setBackgroundImage:newPressedImage forState:UIControlStateHighlighted];
-	
-	[button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-	
+    UIButton *button = [[UIButton alloc] initWithFrame:frame];
+    // or you can do this:
+    //        UIButton *button = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
+
+    button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+
+    [button setTitle:title forState:UIControlStateNormal];
+    if (darkTextColor) {
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    } else {
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+
+    UIImage *newImage = [image stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
+    [button setBackgroundImage:newImage forState:UIControlStateNormal];
+
+    UIImage *newPressedImage = [imagePressed stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0];
+    [button setBackgroundImage:newPressedImage forState:UIControlStateHighlighted];
+
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+
     // in case the parent view draws with a custom color or gradient, use a transparent color
-	button.backgroundColor = [UIColor clearColor];
-	
-	return button;
+    button.backgroundColor = [UIColor clearColor];
+
+    return button;
 }
 
 static NSNumber *numCentPlaces;
@@ -163,7 +163,7 @@ static NSNumber *priceDenominator;
     [window addSubview:navController.view];
     [window makeKeyAndVisible];
     [self setupDefaults];
-	return YES;
+    return YES;
 }
 
 - (void)applicationSignificantTimeChange:(UIApplication *)application {
