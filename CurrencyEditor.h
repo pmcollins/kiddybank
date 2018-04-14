@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 8/15/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

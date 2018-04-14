@@ -3,7 +3,6 @@
 //  XReader
 //
 //  Created by Pablo Collins on 1/30/11.
-//  Copyright 2011 trickbot. All rights reserved.
 //
 
 #import "TableViewData.h"
@@ -49,6 +48,5 @@
     TableViewSection *s = [self section:[indexPath section]];
     return [s rowAtIndex:[indexPath row]];
 }
-
 
 @end

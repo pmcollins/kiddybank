@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 4/28/11.
-//  Copyright 2011 trickbot. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 4/28/11.
-//  Copyright 2011 trickbot. All rights reserved.
 //
 
 #import "AccountHistoryCell.h"
@@ -33,7 +32,6 @@
     NSString *s = [NSString stringWithFormat:@"bal. %@", b];
     balanceLabel.text = s;
 }
-
 
 @end
 

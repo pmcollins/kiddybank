@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 4/20/11.
-//  Copyright 2011 trickbot. All rights reserved.
 //
 
 #import "HistoryItem.h"

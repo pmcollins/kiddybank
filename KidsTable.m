@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 6/10/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "KidsTable.h"
@@ -25,9 +24,9 @@
 - (UIBarButtonItem *)settingsButton {
     if (settingsButton == nil) {
         settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
-                                                           style:UIBarButtonItemStylePlain
-                                                          target:self
-                                                          action:@selector(pushedSettings:)];
+                                                          style:UIBarButtonItemStylePlain
+                                                         target:self
+                                                         action:@selector(pushedSettings:)];
     }
     return settingsButton;
 }
@@ -35,8 +34,8 @@
 - (UIBarButtonItem *)addButton {
     if (addButton == nil) {
         addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                   target:self
-                                                                   action:@selector(pushedAdd:)];
+                                                                  target:self
+                                                                  action:@selector(pushedAdd:)];
     }
     return addButton;
 }
@@ -70,7 +69,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"CellID";
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                                    reuseIdentifier:CellIdentifier];
+                                                   reuseIdentifier:CellIdentifier];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     NSUInteger i = [indexPath indexAtPosition:1];
     Kid *kid = [kids objectAtIndex:i];

@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 6/17/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "KidFormCell.h"
@@ -18,15 +17,8 @@
     return self;
 }
 
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
-
-
-
 
 @end

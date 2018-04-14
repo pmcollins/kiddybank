@@ -3,7 +3,6 @@
 //  Allowance
 //
 //  Created by Pablo Collins on 7/11/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "CreditDebitScreen.h"
